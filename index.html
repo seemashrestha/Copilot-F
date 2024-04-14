@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikea Furniture</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .navbar, .footer {
+            background-color: black;
+        }
+        .navbar a, .footer p {
+            color: white;
+        }
+        .product-card {
+            margin: 20px;
+            float: left;
+            width: 22%;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-description {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer {
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .search-label {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Ikea</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <label for="navbar-search" class="search-label">Search</label>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="navbar-search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="product-card">
+            <img src="https://example.com/product-image.jpg" alt="Product Image">
+            <div class="product-description">
+                <h5>Product Name</h5>
+                <p>$99.99</p>
+                <p>Product Description</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2022 Ikea</p>
+    </footer>
+</body>
+</html>
